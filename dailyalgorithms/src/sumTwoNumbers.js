@@ -3,6 +3,7 @@
 //Sample input: [3,5,-4,8,11,1,-1,6], 10 //=> [-1,11]
 
 //Naive Solution 2 loops O(n^2) time O(1) space
+//Self Explanatory 2 loops to loop over and match each and every possible combination
 function sumTwoNumbers(array, target) {
   // Write your code here.
   for (let i = 0; i < array.length - 1; i++) {
@@ -18,6 +19,7 @@ function sumTwoNumbers(array, target) {
 }
 
 //Hash Table Solution O(n) time O(n) space
+//Create hash table to match values to target. You are given target and you have both numbers readily available. Create a hash table and set value of num to true. If we find the corresponding num (potentialMatch), then return values, else return empty array
 function twoNumberSum(array, targetSum) {
   // Write your code here.
   let nums = {};
@@ -33,6 +35,7 @@ function twoNumberSum(array, targetSum) {
 }
 
 //Sorted Array Solution O(nlog(n)) time O(1) space
+//Sort through array first in ascending order. If left value and right value added together is bigger than target, we move the left value to the left, else move the right value to the right
 function twoNumberSum(array, targetSum) {
   // Write your code here.
   array.sort((a, b) => a - b);
