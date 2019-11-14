@@ -14,3 +14,6 @@ function productSum(array, multiplier = 1) {
   }
   return sum * multiplier;
 }
+
+//this is a classic recursion problem. Search through the array, if it is a number, we add that to our total
+//if it is anohter array, we call productSum on the array and increase the multiplier by 1.
