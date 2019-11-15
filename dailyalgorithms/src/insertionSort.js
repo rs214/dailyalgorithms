@@ -28,3 +28,7 @@ var insertionSort = function(array) {
         insert(array, i-1, array[i]);
     }
 };
+
+
+//Alternate Solution using swap
+
